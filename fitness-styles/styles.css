@@ -73,12 +73,11 @@ body{
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 8rem;
-    /* border: 5px solid  red; */
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.158)100% );
     
 }
 .banner-section-container{
     width: 60%;
-    /* border: 2px solid green; */
 }
 
 
@@ -111,6 +110,64 @@ body{
     box-sizing:border-box ;
     border: 1px solid white ;
    
+}
+
+
+.banner-img-container .container-1,.container-2{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 1.75rem;
+}
+
+.container-1 .number{
+    font-size: 2.5rem;
+    font-weight:900 ;
+
+}
+
+.container-1 .video{
+    font-size: 0.8rem;
+    font-weight: 400;
+
+}
+
+.container-2 .number{
+    color: rgb(250, 250, 249);
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-align: center;
+
+}
+
+.container-2 .video{
+    color: rgba(239, 237, 232, 0.65);
+    font-size:1rem;
+    font-weight: 400;
+    text-align: center;
+
+
+}
+.banner-img-container{
+    position:relative
+}
+
+.container-1 {
+    position: absolute;
+    top: 0.5rem;
+    right:-0.75rem;
+}
+
+.container-2{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+}
+
+.number .icon{
+    color: rgb(230, 83, 60);
 }
 
 /* banner styles ends here */

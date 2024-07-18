@@ -12,11 +12,12 @@ body{
     width: 100%;
 }
 
-.btn-primary .btn-1, .btn-2{
+.btn-primary .btn-1, .btn-2, .btn{
     padding: 1rem 2.5rem 1rem 2.5rem;
     border-radius: 3rem;
     border: none;
     margin: 0 0.9rem;
+    color: white;
 }
 
 
@@ -112,13 +113,9 @@ body{
    
 }
 
-/* .banner-img-container{
-
-} */
-
 /* banner styles ends here */
 
-/* section-change styles start here */
+/* change styles start here */
 
 .section-change-container{
     width: 80%;
@@ -147,27 +144,76 @@ body{
 .section-change-img-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
-    
-}
-
-.section-change-container .section-2-img-1, .section-2-img-2, .section-2-img-3, .section-2-img-4{
-    /* border: 2px solid red; */
-    margin-bottom: 0.5rem;
 }
 
 .images-section-2{
     border-radius: 6rem;
 }
 
-/* section-change styles ends here */
+/* change styles ends here */
 
-/* section-run starts here */
+/*run styles starts here */
+.section-run-container{
+    background-color:rgb(34,34,34);
+    border-radius: 1.125rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.4rem;
+    
+}
+
+.section-run-title{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.section-run-description{
+    font-size:0.9rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
 
 
-/* section-run starts here */
+.btn{
+    background-color: rgb(230, 83, 60);
+    border-radius:2.6rem ;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 1rem 5rem 1rem 5rem;
+    cursor: pointer;
+}
+
+.section-run-img-container{
+    width: 40%;
+    height: 100%;
+}
+
+.section-run-img{
+    width: 100%;
+    border-radius: 3rem;
+}
+
+/* run styles ends here */
 
 
+
+/* meet styles starts here */
+
+
+
+
+/* meet styles ends here */
+
+
+/* footer styles  */
+
+
+
+
+/* footer style ends here */
 
 /* responsive styles */
 
@@ -181,7 +227,8 @@ body{
         display: none;
     }
 
-    .banner-section{
+    .banner-section,
+    .section-run-container{
         flex-direction: column;
     }
 
@@ -197,7 +244,26 @@ body{
     .section-change-img-container{
         grid-template-columns: 1fr;
         width: 100%;
+        gap: 0.5rem;
        
     }
+
+    .section-run-container{
+        text-align: left;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .section-run-img-container{
+        width: 100%;
+    }
+
+    .section-run-img{
+        width:100%;
+    }
+
 
 }

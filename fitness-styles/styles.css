@@ -1,14 +1,23 @@
 /* font-style */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 /* universal styles */
 body{
     
     font-family: "Inter", sans-serif;
     background-color:black;
+    color: white;
+    width: 100%;
 }
 
+.btn-primary .btn-1, .btn-2{
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 3rem;
+    border: none;
+    margin: 0 0.9rem;
+}
 
 
 /* navbar styles */
@@ -36,7 +45,6 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius:2.5rem;
     padding: 0.3rem;
-    color: white;
     font-size: 1.125rem;
     font-weight: 400;
     cursor: pointer;
@@ -52,10 +60,116 @@ body{
 
 .nav-hamburger{
     display: none;
-    color: white;
+    /* color: white; */
+}
+
+/* banner section styles */
+
+.banner-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    /* border: 5px solid  red; */
+    
+}
+.banner-section-container{
+    width: 60%;
+    /* border: 2px solid green; */
 }
 
 
+.banner-title{
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+#span{
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-size: 6rem;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.btn-primary .btn-1{
+    background-color: rgb(230, 83, 60);
+
+}
+
+ .btn-primary .btn-2{
+    background-color: black;
+    color: white;
+    box-sizing:border-box ;
+    border: 1px solid white ;
+   
+}
+
+/* .banner-img-container{
+
+} */
+
+/* banner styles ends here */
+
+/* section-change styles start here */
+
+.section-change-container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-change-title{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.section-change-subtitle{
+    font-size: 1,125rem;
+    font-weight: 600;
+}
+
+.section-change-description{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.5) ; 
+    margin-bottom: 4rem;
+}
+
+
+.section-change-img-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    
+}
+
+.section-change-container .section-2-img-1, .section-2-img-2, .section-2-img-3, .section-2-img-4{
+    /* border: 2px solid red; */
+    margin-bottom: 0.5rem;
+}
+
+.images-section-2{
+    border-radius: 6rem;
+}
+
+/* section-change styles ends here */
+
+/* section-run starts here */
+
+
+/* section-run starts here */
+
+
+
+/* responsive styles */
 
 @media screen and (max-width:576px){
 
@@ -66,4 +180,24 @@ body{
      .navbar-container > .navbar-menus{
         display: none;
     }
+
+    .banner-section{
+        flex-direction: column;
+    }
+
+    .banner-section-container{
+        width: 100%;
+    }
+
+
+    .btn-primary {
+        display: flex;
+    }
+
+    .section-change-img-container{
+        grid-template-columns: 1fr;
+        width: 100%;
+       
+    }
+
 }

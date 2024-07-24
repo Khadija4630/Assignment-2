@@ -269,7 +269,132 @@ body{
 
 /* run styles ends here */
 
+/* BMI styles starts here */
 
+.section-bmi-calc{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+   
+}
+.section-bmi-title{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.section-bmi-description{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5); 
+    margin-bottom: 4rem;
+}
+
+.section-bmi-content{
+    width:100%;
+    margin: 0 auto;
+    background: rgb(34, 34, 34);
+}
+
+.bmi-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.bmi-chart{
+   width: 30%;
+   height: 25rem;
+   margin-left: 15rem;
+}
+
+.section-bmi-subtitle{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+table{
+    width:90%;
+    height:15rem;
+}
+
+table td,th{
+    padding-left: 1rem;
+}
+
+th{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+td{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+table, th,td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    
+}
+
+
+.bmi-input{
+    width:40%;
+    margin-top:2.5rem;
+}
+.section-bmi-description-1{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5); 
+    margin-bottom: 2rem;
+}
+
+ .height ,.weight{
+    border-radius:8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 1rem 2.5rem 1rem 1.25rem;
+    margin-bottom:1rem;
+    margin-right: 0.5rem;
+}
+
+.sex,.age{
+    border-radius:8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2.5rem 1rem 1.25rem;
+    border: none;
+    margin-right: 0.5rem;
+    margin-bottom:1rem;
+}
+
+.factor{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 1rem 1.25rem 1rem 1.25rem ;
+    width:73%;
+    margin-bottom: 1rem;
+
+}
+
+.btn-1{
+    background-color: rgb(230, 83, 60);
+    border-radius: 2.625rem;
+    padding: 1.2rem 4rem 1.2rem 4rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+/* Bmi styles end here */
 
 /* meet styles starts here */
 
@@ -394,8 +519,7 @@ hr{
 }
 
 .footer-2{
-    margin-bottom: 1.5rem;
-    padding: 1rem 0;
+    margin-bottom: 1rem;
     font-size: 1.25rem;
     font-weight: 400;
 }
@@ -424,11 +548,11 @@ hr{
         
     }
 
-    .banner-section-container, .section-meet-container{
+    .banner-section-container, .section-meet-container,.section-bmi-calc{
         width: 90%;
     }
 
-    .btn-primary {
+    .btn-primary{
         display: flex;
     }
 
@@ -453,21 +577,51 @@ hr{
         width:100%;
     }
 
+    
+    .bmi-container{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+
+    .bmi-chart, .bmi-input{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+
+   
+    #Height,#Age{
+        display: flex;
+        width: 95%;
+        
+    }
+
+    .age,.weight,.height,.sex{
+        width: 100%;
+    }
+    .factor{
+        width: 85%;
+    }
+
+
     .footer-container, .footer-1,hr , .footer-2{
     text-align: left;
     justify-content:space-around;
     align-items:flex-start;
-    width: 97%;
+    width: 100%;
     }
 
-    .footer-1{
-        margin-bottom: 4rem;
+
+    .footer-1 , .footer-description-1{
+        margin-bottom: 3rem;
 
     }
     .footer-2{
     margin: 1rem 0;
-    padding: 1rem;
-
     }
 
 

@@ -49,7 +49,6 @@ body{
     font-size: 1.125rem;
     font-weight: 400;
     cursor: pointer;
-    /* border: 1px solid red; */
    
 }
 #option-1{
@@ -61,7 +60,6 @@ body{
 
 .nav-hamburger{
     display: none;
-    /* color: white; */
 }
 
 /* banner section styles */
@@ -70,7 +68,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 8rem;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.158)100% );
@@ -97,6 +95,16 @@ body{
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.banner-title .break {
+    display: block;
+}
+
+.banner-description .break{
+    display: block;
 }
 
 .btn-primary .btn-1{
@@ -112,22 +120,29 @@ body{
    
 }
 
+.banner-section >.btn-primary{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
 
 .banner-img-container .container-1, .container-2{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.75rem;
     backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.1);
-    /* width: 80%; */
+    padding: 0 0 0 1rem;
 }
 
 .banner-img-container .container-1{
-    width: 40%;
+    width: 45;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .banner-img-container .container-2{
-    width: 40%;
+    width: 45%;
+    background-color: rgba(48, 48, 48, 0.54);
+    
 }
 
 .container-1 .number{
@@ -139,6 +154,7 @@ body{
 .container-1 .video{
     font-size: 0.8rem;
     font-weight: 400;
+    color:(255, 255, 255, 0.65);
 
 }
 
@@ -146,7 +162,7 @@ body{
     color: rgb(250, 250, 249);
       font-size: 1.5rem;
       font-weight: 900;
-      text-align: center;
+      
 
 }
 
@@ -154,7 +170,6 @@ body{
     color: rgba(239, 237, 232, 0.65);
     font-size:1rem;
     font-weight: 400;
-    text-align: center;
 
 
 }
@@ -238,6 +253,11 @@ body{
 .section-run-title{
     font-size: 3.5rem;
     font-weight: 900;
+    
+}
+
+.section-run-title .break ,.section-run-description .break{
+    display:block;
 }
 
 .section-run-description{
@@ -259,11 +279,12 @@ body{
 
 .section-run-img-container{
     width: 50%;
-    height: 100%;
 }
 
 .section-run-img{
     width: 100%;
+    object-position: 66% 33%;
+    object-fit: none;
     border-radius: 3rem;
 }
 
@@ -384,7 +405,7 @@ table, th,td{
 
 }
 
-.btn-1{
+.bmi-input> .btn-1{
     background-color: rgb(230, 83, 60);
     border-radius: 2.625rem;
     padding: 1.2rem 4rem 1.2rem 4rem;
@@ -392,6 +413,7 @@ table, th,td{
     font-weight: 600;
     color: white;
     margin-bottom: 4rem;
+    border:none ;
 }
 
 /* Bmi styles end here */
@@ -530,6 +552,18 @@ hr{
 /* responsive styles */
 
 @media screen and (max-width:576px){
+    body{
+        margin: 0;
+    }
+
+
+    .navbar-container{
+        margin:1.5rem;
+    }
+    .banner-section-container{
+        width: 100%;
+        margin: 0;
+    }
 
     .nav-hamburger{
         display: block;
@@ -537,6 +571,21 @@ hr{
     
      .navbar-container > .navbar-menus{
         display: none;
+    }
+
+
+    .btn-1,.btn-2{
+        padding: 0.5rem 1.25rem;
+    }
+
+
+    .banner-title .break,
+    .banner-description .break,
+    .section-run-title .break ,
+    .section-run-description .break {
+        display: inline;
+        margin: 0;
+        padding: 0;
     }
 
     .banner-section,
@@ -548,7 +597,9 @@ hr{
         
     }
 
-    .banner-section-container, .section-meet-container,.section-bmi-calc{
+    .banner-section,
+    .section-change-container,
+    .section-bmi-calc{
         width: 90%;
     }
 
@@ -562,22 +613,38 @@ hr{
         gap: 0.5rem;
        
     }
+    .section-change-title,
+    .banner-img-container{
+        margin: 0;
+    }
 
-    .btn{
-        width: 100%;
-        margin-bottom: 4rem;
+    .section-run-container{
+        margin: 0;
     }
 
     .section-run-img-container{
-        width:90% ;
-
-
+        width: 100%;
+        padding: 0;
     }
     .section-run-img{
-        width:100%;
+        object-fit:cover ;
     }
 
-    
+    .section-meet-img .h1{
+        bottom: 2rem;
+        left: 3rem ;
+    }
+    .section-meet-img .h3{
+        bottom: 1rem;
+        left: 4rem;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+
     .bmi-container{
         flex-direction: column;
         justify-content:center;
@@ -607,22 +674,60 @@ hr{
         width: 85%;
     }
 
+    .bmi-input >.btn-1{
+       padding: 1rem 3rem 1rem 3rem; 
+       border: none;
+    }
 
-    .footer-container, .footer-1,hr , .footer-2{
+    .section-meet-container{
+        width: 90%;
+    }
+
+    .section-meet-content{
+        width: 95%;
+    }
+
+    .section-meet-container .section-meet-img-container{
+        width:98%;
+        margin: 0;
+    }
+    .section-meet-img-container>.section-meet-img{
+        width: 100%;
+    }
+
+    .footer-container, .footer-1, .footer-2{
     text-align: left;
     justify-content:space-around;
     align-items:flex-start;
     width: 100%;
     }
 
+    .footer-title{
+        margin: 0.5rem;
+    }
+
+   .footer-2 hr{
+        width: 90%;
+    }
 
     .footer-1 , .footer-description-1{
         margin-bottom: 3rem;
 
     }
-    .footer-2{
-    margin: 1rem 0;
+
+    .footer-2> .footer-description,.footer-1{
+        margin: 1rem ;
     }
 
+    .footer-description{
+        font-size: 1.45rem;
+    }
 
+    .footer-2 .footer-description{
+        font-size: 1.25rem;
+    }
+
+    .footer-2{
+        margin-top: 6rem;
+    }
 }

@@ -552,17 +552,13 @@ hr{
 /* responsive styles */
 
 @media screen and (max-width:576px){
-    body{
-        margin: 0;
-    }
-
 
     .navbar-container{
         margin:1.5rem;
     }
     .banner-section-container{
         width: 100%;
-        margin: 0;
+        margin: 1rem auto;
     }
 
     .nav-hamburger{
@@ -584,8 +580,6 @@ hr{
     .section-run-title .break ,
     .section-run-description .break {
         display: inline;
-        margin: 0;
-        padding: 0;
     }
 
     .banner-section,
@@ -619,7 +613,8 @@ hr{
     }
 
     .section-run-container{
-        margin: 0;
+        margin: 0 auto;
+        padding: 2rem 2rem 2rem 2rem;
     }
 
     .section-run-img-container{
@@ -695,11 +690,18 @@ hr{
         width: 100%;
     }
 
-    .footer-container, .footer-1, .footer-2{
+    .footer-container, .footer-2{
     text-align: left;
     justify-content:space-around;
     align-items:flex-start;
     width: 100%;
+    }
+
+
+    .footer-1{
+        text-align: left;
+        justify-content:space-around;
+        align-items:flex-start;
     }
 
     .footer-title{
@@ -716,7 +718,7 @@ hr{
     }
 
     .footer-2> .footer-description,.footer-1{
-        margin: 1rem ;
+        margin-left: 2rem ;
     }
 
     .footer-description{

@@ -370,6 +370,13 @@ table, th,td{
     width:40%;
     margin-top:2.5rem;
 }
+
+.height:hover{
+   outline: none;
+   background-color:lime ;
+}
+
+
 .section-bmi-description-1{
     font-size: 14px;
     font-weight: 400;
@@ -380,30 +387,57 @@ table, th,td{
  .height ,.weight{
     border-radius:8px;
     background-color: rgba(255, 255, 255, 0.1);
+    font-size:1rem ;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
     border: none;
     padding: 1rem 2.5rem 1rem 1.25rem;
     margin-bottom:1rem;
     margin-right: 0.5rem;
 }
+
+
+.age{
+    padding: 1rem 2.5rem 1rem 1.25rem;
+}
+
 
 .sex,.age{
     border-radius:8px;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 1rem 2.5rem 1rem 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size:1rem ;
+    font-weight: 400;
     border: none;
     margin-right: 0.5rem;
     margin-bottom:1rem;
 }
 
+.sex{
+    width: 43%;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+}
+#arrow{
+    color: rgba(255, 255, 255, 0.3);
+
+}
+
+
 .factor{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size:1rem ;
+    font-weight: 400;
     border: none;
     padding: 1rem 1.25rem 1rem 1.25rem ;
-    width:73%;
+    width: 88%;
     margin-bottom: 1rem;
 
 }
+
+
+
 
 .bmi-input> .btn-1{
     background-color: rgb(230, 83, 60);
@@ -658,15 +692,24 @@ hr{
    
     #Height,#Age{
         display: flex;
-        width: 95%;
-        
+        width: 95%; 
     }
-
-    .age,.weight,.height,.sex{
+    
+    .weight,.height{
         width: 100%;
     }
+
+    .age{
+        width:80% ;
+    }
+
+
+    .sex{
+        width: 100%;
+    }
+
     .factor{
-        width: 85%;
+        width: 93%;
     }
 
     .bmi-input >.btn-1{

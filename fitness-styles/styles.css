@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 /* universal styles */
+
 body{
     
     font-family: "Inter", sans-serif;
@@ -12,12 +13,28 @@ body{
     width: 100%;
 }
 
+
 .btn-primary .btn-1, .btn-2, .btn{
     padding: 1rem 2.5rem 1rem 2.5rem;
     border-radius: 3rem;
     border: none;
     margin: 0 0.9rem;
     color: white;
+    cursor: pointer;
+}
+
+/* font styles universal */
+.section-change-description,
+.section-run-description,
+.section-bmi-description,
+.section-bmi-description-1,
+.section-meet-description,
+.section-price-description,
+.footer-description,
+.footer-description-1{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -94,8 +111,8 @@ body{
 .banner-description{
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 3rem;
     color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 3rem;
 }
 
 
@@ -135,7 +152,7 @@ body{
 }
 
 .banner-img-container .container-1{
-    width: 45;
+    width: 45%;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -147,7 +164,7 @@ body{
 
 .container-1 .number{
     font-size: 2rem;
-    font-weight:900 ;
+    font-weight:900;
 
 }
 
@@ -219,9 +236,6 @@ body{
 }
 
 .section-change-description{
-    font-size: 0.9rem;
-    font-weight: 400;
-    color:rgba(255, 255, 255, 0.5) ; 
     margin-bottom: 4rem;
 }
 
@@ -261,9 +275,6 @@ body{
 }
 
 .section-run-description{
-    color:rgba(255, 255, 255, 0.5);
-    font-size:0.9rem;
-    font-weight: 400;
     margin-bottom: 3rem;
 }
 
@@ -302,14 +313,11 @@ body{
    
 }
 .section-bmi-title{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
 }
 
 .section-bmi-description{
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5); 
     margin-bottom: 4rem;
 }
 
@@ -333,7 +341,7 @@ body{
 }
 
 .section-bmi-subtitle{
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 900;
     margin-bottom: 2rem;
 }
@@ -348,13 +356,13 @@ table td,th{
 }
 
 th{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: left;
 }
 
 td{
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -371,16 +379,9 @@ table, th,td{
     margin-top:2.5rem;
 }
 
-.height:hover{
-   outline: none;
-   background-color:lime ;
-}
 
 
 .section-bmi-description-1{
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5); 
     margin-bottom: 2rem;
 }
 
@@ -417,6 +418,7 @@ table, th,td{
     width: 43%;
     padding: 1rem 1.25rem 1rem 1.25rem;
 }
+
 #arrow{
     color: rgba(255, 255, 255, 0.3);
 
@@ -448,6 +450,7 @@ table, th,td{
     color: white;
     margin-bottom: 4rem;
     border:none ;
+    cursor: pointer;
 }
 
 /* Bmi styles end here */
@@ -472,9 +475,6 @@ table, th,td{
 
 
 .section-meet-description{
-    color: rgba(255, 255, 255, 0.5);
-    font-size:0.9rem;
-    font-weight: 400;
     margin-bottom: 3rem;
 
 }
@@ -549,11 +549,6 @@ table, th,td{
     font-weight:800 ;
 }
 
-.footer-description, .footer-description-1{
-    font-size: 0.9rem;
-    font-family: 400;
-    color: rgba(255, 255, 255, 0.5);
-}
 
 .footer-description-1{
     margin-bottom: 8rem;

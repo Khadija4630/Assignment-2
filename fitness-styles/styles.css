@@ -101,6 +101,7 @@ body{
 .banner-title{
     font-weight: 900;
     font-size: 5rem;
+    line-height: 120%;
     
 }
 
@@ -509,14 +510,14 @@ table, th,td{
 }
 
 
-.section-meet-img .h1{
+.section-meet-img .h3{
     position:absolute;
     bottom: 2rem;
     left: 1.75rem;
 
 }
 
-.section-meet-img .h3{
+.section-meet-img .h4{
     position:absolute;
     bottom: 0.75rem;
     left: 1.75rem;
@@ -741,7 +742,11 @@ hr{
     /* font styles */
     .banner-title,
     .footer-title{
-        font-size: 3rem;
+        font-size: 3.8rem;
+    }
+
+    #span{
+        font-size: 6rem;
     }
 
     .section-change-title,
@@ -749,7 +754,7 @@ hr{
     .section-meet-title,
     .section-bmi-title,
     .section-price-title{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .section-bmi-subtitle,
@@ -760,6 +765,7 @@ hr{
         font-size: 1.5rem;
     }
 
+    
 
     .banner-section,
     .section-change-container,
@@ -807,11 +813,11 @@ hr{
         padding: 0;
     }
 
-    .section-meet-img .h1{
+    .section-meet-img .h3{
         bottom: 1.75rem;
         left:1.75rem ;
     }
-    .section-meet-img .h3{
+    .section-meet-img .h4{
         bottom: 0.5rem;
         left: 1.75rem;
     }

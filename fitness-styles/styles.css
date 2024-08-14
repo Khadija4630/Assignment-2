@@ -34,12 +34,24 @@ body{
 .section-price-description,
 .footer-description,
 .footer-description-1{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
+    line-height: 24px;
     color: rgba(255, 255, 255, 0.5);
 }
 
 
+
+.banner-title .break,
+.banner-description .break,
+.section-run-title .break ,
+.section-run-description .break,
+.section-bmi-description .break,
+.section-bmi-description-1 .break,
+.section-meet-description .break,
+.section-price-description .break {
+    display: block;
+}
 /* navbar styles */
 .navbar-container{
     display: flex;
@@ -120,15 +132,6 @@ body{
 }
 
 
-.banner-title .break {
-    display: block;
-}
-
-
-
-.banner-description .break{
-    display: block;
-}
 
 .btn-primary .btn-1{
     background-color: rgb(230, 83, 60);
@@ -276,10 +279,6 @@ body{
     
 }
 
-.section-run-title .break ,.section-run-description .break{
-    display:block;
-}
-
 .section-run-description{
     margin-bottom: 3rem;
 }
@@ -326,6 +325,7 @@ body{
 .section-bmi-description{
     margin-bottom: 4rem;
 }
+
 
 .section-bmi-content{
     width:100%;
@@ -386,10 +386,10 @@ table, th,td{
 }
 
 
-
 .section-bmi-description-1{
     margin-bottom: 2rem;
 }
+
 
  .height ,.weight{
     border-radius:8px;
@@ -482,8 +482,8 @@ table, th,td{
 
 .section-meet-description{
     margin-bottom: 3rem;
-
 }
+
 .section-meet-container .section-meet-img-container{
     width: 100%;
     margin: 0 auto;
@@ -506,13 +506,22 @@ table, th,td{
 .section-meet-img .meet-img{
     border-radius: 1.125rem;
     width: 100%;
+    height: 320px;
 
+}
+
+h3{
+    font-size:1.5rem ;
+}
+
+h4{
+    font-size: 1.2rem;
 }
 
 
 .section-meet-img .h3{
     position:absolute;
-    bottom: 2rem;
+    bottom: 2.2rem;
     left: 1.75rem;
 
 }
@@ -548,6 +557,7 @@ table, th,td{
 .section-price-description{
     margin-bottom: 3rem;
 }
+
 
 .section-price-2{
     width: 100%;
@@ -726,7 +736,11 @@ hr{
     .banner-title .break,
     .banner-description .break,
     .section-run-title .break ,
-    .section-run-description .break {
+    .section-run-description .break,
+    .section-bmi-description .break,
+    .section-bmi-description-1 .break,
+    .section-meet-description .break,
+    .section-price-description .break {
         display: inline;
     }
 

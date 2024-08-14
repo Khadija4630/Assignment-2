@@ -901,8 +901,13 @@ hr{
         width: 100%;
     }
 
+    .section-price-2{
+        text-align: center;
+    }
+
     .section-price-container{
         width: 90%;
+        text-align: center;
     }
 
     .grid-card{
